@@ -16,7 +16,10 @@
   </head>
   <body>
     {{content-for "body"}}
-
+    <form name="contact" netlify netlify-honeypot="bot-field" hidden>
+      <input type="text" name="name" />
+      <input type="email" name="email" />
+      </form>      
     <script src="{{rootURL}}assets/vendor.js"></script>
     <script src="{{rootURL}}assets/ember-form-test-go.js"></script>
 
